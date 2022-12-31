@@ -49,7 +49,7 @@ document.querySelector("input")
   const answerCountry = titleCase(e.currentTarget.value);
   answerCountry.maxLength = "40";
   let a = document.getElementById(answerCountry);
-  a.style.fill = "red";
+  a.style.fill = "#009933";
   
   if(int!==null){
     clearInterval(int);
@@ -73,7 +73,7 @@ document.querySelector("input")
   allPaths.forEach(elem => elem.addEventListener('mouseout', HoverOff));
 */
 
-let [milliseconds,seconds,minutes,hours] = [0,0,0,0];
+let [seconds,minutes,hours] = [0,0,0];
 let timerRef = document.querySelector('.timerDisplay');
 let int = null;
 
